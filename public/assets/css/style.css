@@ -1,0 +1,53 @@
+body {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.jumbotron {
+	text-align: center;
+	color: white;
+	background-color: #003380;
+}
+
+.panel > .panel-heading {
+	background-color: #003380;
+	color: white;
+}
+
+.resultBox {
+	margin: 10px;
+	border: groove;
+	border-radius: 5px;
+	height: 50px;
+}
+
+.resultForm > h4 {
+	float: left;
+}
+
+.savedForm > p {
+	float: left;
+}
+
+.savedBox {
+	margin: 10px;
+	border:groove;
+	border-radius: 5px;
+	height: 30px;
+}
+
+.saveBtn {
+	float: right;
+	margin-top: 4px;
+	margin-right: 25px;
+}
+
+.deleteBtn {
+	float: right;
+	margin-right: 25px;
+}
+
+
+
+
+
+

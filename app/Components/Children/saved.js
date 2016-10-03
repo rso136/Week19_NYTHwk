@@ -46,16 +46,16 @@ var Saved = React.createClass({
 
 			<div className="panel panel-default">
 				<div className="panel-heading">
-					<h3 className="panel-title text-center">Saved Articles</h3>
+					<h3 className="panel-title">Saved Articles</h3>
 				</div>
 				<div className="panel-body">
 
 					{this.state.saved.map(function(result, i){
-						return <div key={i}>
-							   <form>
+						return <div className="savedBox" key={i}>
+							   <form className="savedForm">
 								<p><a href={result.url} target="_blank">{result.title}</a></p>
 								<input className="idInput" type="hidden" name="_id" value={result._id}></input>
-								<button className="deleteBtn" type="button">Delete</button>
+								<button className="deleteBtn btn btn-xs btn-warning" type="button">Delete</button>
 								</form>
 								</div>
 					}

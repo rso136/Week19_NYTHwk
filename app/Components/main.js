@@ -74,8 +74,8 @@ var Main = React.createClass({
 
 			<div className="container">
 			<div className="jumbotron">
-				<h2>New York Times Article Repository</h2>
-				<h3>Search and save articles of interest</h3>
+				<h2>NY TIMES ARTICLE REPOSITORY</h2>
+				<h3><i>Search and save articles of interest</i></h3>
 
 			</div>
 				<div className="row">

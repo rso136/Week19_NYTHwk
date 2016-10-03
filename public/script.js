@@ -3,7 +3,7 @@ $(document).on('click', '.saveBtn', function() {
 	console.log('click');
 	console.log(this);
 
-	$(this).parent().empty();
+	$(this).closest("div").hide();
 })
 
 $(document).on('click', '.deleteBtn', function() {
@@ -18,5 +18,6 @@ $(document).on('click', '.deleteBtn', function() {
 		console.log('article deleted');
 	})
 
-	$(this).parent().empty();
+	$(this).closest("div").hide();
 })
+

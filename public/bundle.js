@@ -21508,12 +21508,16 @@
 					React.createElement(
 						'h2',
 						null,
-						'New York Times Article Repository'
+						'NY TIMES ARTICLE REPOSITORY'
 					),
 					React.createElement(
 						'h3',
 						null,
-						'Search and save articles of interest'
+						React.createElement(
+							'i',
+							null,
+							'Search and save articles of interest'
+						)
 					)
 				),
 				React.createElement(
@@ -21589,13 +21593,13 @@
 					{ className: "panel-heading" },
 					React.createElement(
 						"h3",
-						{ className: "panel-title text-center" },
-						"Query"
+						{ className: "panel-title" },
+						"Search Parameters"
 					)
 				),
 				React.createElement(
 					"div",
-					{ className: "panel-body text-center" },
+					{ className: "panel-body" },
 					React.createElement(
 						"form",
 						null,
@@ -21603,42 +21607,30 @@
 							"div",
 							{ className: "form-group" },
 							React.createElement(
-								"h4",
+								"p",
 								{ className: "" },
-								React.createElement(
-									"strong",
-									null,
-									"Topic"
-								)
+								"Search Term:"
 							),
-							React.createElement("input", { type: "text", className: "form-control text-center", id: "term", onChange: this.handleChange, required: true }),
+							React.createElement("input", { type: "text", className: "form-control", id: "term", onChange: this.handleChange, required: true }),
 							React.createElement("br", null),
 							React.createElement(
-								"h4",
+								"p",
 								{ className: "" },
-								React.createElement(
-									"strong",
-									null,
-									"Start Date"
-								)
+								"Start Year:"
 							),
-							React.createElement("input", { type: "text", className: "form-control text-center", id: "start", onChange: this.handleChange, required: true }),
+							React.createElement("input", { type: "text", className: "form-control", id: "start", onChange: this.handleChange, required: true }),
 							React.createElement("br", null),
 							React.createElement(
-								"h4",
+								"p",
 								{ className: "" },
-								React.createElement(
-									"strong",
-									null,
-									"End Date"
-								)
+								"End Year:"
 							),
-							React.createElement("input", { type: "text", className: "form-control text-center", id: "end", onChange: this.handleChange, required: true }),
+							React.createElement("input", { type: "text", className: "form-control", id: "end", onChange: this.handleChange, required: true }),
 							React.createElement("br", null),
 							React.createElement(
 								"button",
-								{ type: "button", className: "btn btn-primary", onClick: this.handleClick },
-								"Submit"
+								{ type: "button", className: "searchBtn btn btn-success", onClick: this.handleClick },
+								"SUBMIT"
 							)
 						)
 					)
@@ -21682,13 +21674,13 @@
 					{ className: "panel-heading" },
 					React.createElement(
 						"h3",
-						{ className: "panel-title text-center" },
+						{ className: "panel-title" },
 						"Results"
 					)
 				),
 				React.createElement(
 					"div",
-					{ className: "panel-body" },
+					{ className: "resultDisp panel-body" },
 					this.props.info.map(function (results, i) {
 
 						return React.createElement(
@@ -21706,11 +21698,11 @@
 										results.headline.main
 									)
 								),
-								React.createElement("input", { type: "hidden", name: "title", value: results.headline.main, size: "100" }),
+								React.createElement("input", { type: "hidden", name: "title", value: results.headline.main }),
 								React.createElement("input", { type: "hidden", name: "url", value: results.web_url, size: "100" }),
 								React.createElement(
 									"button",
-									{ className: "saveBtn", type: "button", onClick: self.handleClick.bind(self, results) },
+									{ className: "saveBtn btn btn-danger", type: "button", onClick: self.handleClick.bind(self, results) },
 									"Save"
 								)
 							)
@@ -21782,7 +21774,7 @@
 					{ className: 'panel-heading' },
 					React.createElement(
 						'h3',
-						{ className: 'panel-title text-center' },
+						{ className: 'panel-title' },
 						'Saved Articles'
 					)
 				),
@@ -21792,10 +21784,10 @@
 					this.state.saved.map(function (result, i) {
 						return React.createElement(
 							'div',
-							{ key: i },
+							{ className: 'savedBox', key: i },
 							React.createElement(
 								'form',
-								null,
+								{ className: 'savedForm' },
 								React.createElement(
 									'p',
 									null,
@@ -21808,7 +21800,7 @@
 								React.createElement('input', { className: 'idInput', type: 'hidden', name: '_id', value: result._id }),
 								React.createElement(
 									'button',
-									{ className: 'deleteBtn', type: 'button' },
+									{ className: 'deleteBtn btn btn-xs btn-warning', type: 'button' },
 									'Delete'
 								)
 							)

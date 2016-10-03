@@ -34,23 +34,23 @@ var Form = React.createClass({
 
 			<div className="panel panel-default">
 				<div className="panel-heading">
-					<h3 className="panel-title text-center">Query</h3>
+					<h3 className="panel-title">Search Parameters</h3>
 				</div>
-				<div className="panel-body text-center">
+				<div className="panel-body">
 
 						<form>
 							<div className="form-group">
-								<h4 className=""><strong>Topic</strong></h4>
+								<p className="">Search Term:</p>
 
-								<input type="text" className="form-control text-center" id="term" onChange= {this.handleChange} required/>
+								<input type="text" className="form-control" id="term" onChange= {this.handleChange} required/>
 								<br />
-								<h4 className=""><strong>Start Date</strong></h4>
-								<input type="text" className="form-control text-center" id="start" onChange= {this.handleChange} required/>
+								<p className="">Start Year:</p>
+								<input type="text" className="form-control" id="start" onChange= {this.handleChange} required/>
 								<br />
-								<h4 className=""><strong>End Date</strong></h4>
-								<input type="text" className="form-control text-center" id="end" onChange= {this.handleChange} required/>
+								<p className="">End Year:</p>
+								<input type="text" className="form-control" id="end" onChange= {this.handleChange} required/>
 								<br />
-								<button type="button" className="btn btn-primary" onClick={this.handleClick}>Submit</button>
+								<button type="button" className="searchBtn btn btn-success" onClick={this.handleClick}>SUBMIT</button>
 							</div>
 
 						</form>
