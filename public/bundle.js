@@ -21795,7 +21795,7 @@
 							{ key: i },
 							React.createElement(
 								'form',
-								{ action: '/api/delete/', method: 'POST' },
+								null,
 								React.createElement(
 									'p',
 									null,
@@ -21805,10 +21805,10 @@
 										result.title
 									)
 								),
-								React.createElement('input', { type: 'hidden', name: '_id', value: result._id }),
+								React.createElement('input', { className: 'idInput', type: 'hidden', name: '_id', value: result._id }),
 								React.createElement(
 									'button',
-									{ type: 'submit' },
+									{ className: 'deleteBtn', type: 'button' },
 									'Delete'
 								)
 							)

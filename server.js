@@ -57,10 +57,10 @@ app.post('/api/saved', function(req, res){
 	})
 });
 
-app.post('/api/delete', function(req, res){
+app.post('/api/delete/:id', function(req, res){
 
-	Article.find({"_id": req.body._id}).remove(function(){
-		res.redirect('/');
+	Article.find({"_id": req.params.id}).remove(function(){
+		console.log('article deleted');
 
 	})
 });

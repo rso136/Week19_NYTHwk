@@ -52,10 +52,10 @@ var Saved = React.createClass({
 
 					{this.state.saved.map(function(result, i){
 						return <div key={i}>
-							   <form action="/api/delete/" method="POST">
+							   <form>
 								<p><a href={result.url} target="_blank">{result.title}</a></p>
-								<input type="hidden" name="_id" value={result._id}></input>
-								<button type="submit">Delete</button>
+								<input className="idInput" type="hidden" name="_id" value={result._id}></input>
+								<button className="deleteBtn" type="button">Delete</button>
 								</form>
 								</div>
 					}
