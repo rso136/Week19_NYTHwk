@@ -21702,7 +21702,7 @@
 								React.createElement("input", { type: "hidden", name: "url", value: results.web_url, size: "100" }),
 								React.createElement(
 									"button",
-									{ className: "saveBtn btn btn-success", type: "button", onClick: self.handleClick.bind(self, results) },
+									{ className: "saveBtn btn btn-custom", type: "button", onClick: self.handleClick.bind(self, results) },
 									"Save"
 								)
 							)

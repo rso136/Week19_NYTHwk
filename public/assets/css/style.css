@@ -3,13 +3,18 @@ body {
 }
 
 .jumbotron {
-	text-align: center;
-	color: white;
-	background-color: #003380;
+    height: 400px;
+    background: #000 url("../images/skyline.jpg") no-repeat center center;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    color: #FFF; // change text color
+
 }
 
 .panel > .panel-heading {
-	background-color: #003380;
+	background-color: #3888c1;
 	color: white;
 }
 
@@ -47,7 +52,7 @@ body {
 }
 
 .btn-custom {
-	background-color: #003380;
+	background-color: #3888c1;
 	color: white;
 }
 
