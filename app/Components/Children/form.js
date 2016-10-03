@@ -50,7 +50,7 @@ var Form = React.createClass({
 								<p className="">End Year:</p>
 								<input type="text" className="form-control" id="end" onChange= {this.handleChange} required/>
 								<br />
-								<button type="button" className="searchBtn btn btn-success" onClick={this.handleClick}>SUBMIT</button>
+								<button type="button" className="searchBtn btn btn-custom" onClick={this.handleClick}>SUBMIT</button>
 							</div>
 
 						</form>

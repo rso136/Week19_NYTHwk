@@ -55,7 +55,7 @@ var Saved = React.createClass({
 							   <form className="savedForm">
 								<p><a href={result.url} target="_blank">{result.title}</a></p>
 								<input className="idInput" type="hidden" name="_id" value={result._id}></input>
-								<button className="deleteBtn btn btn-xs btn-warning" type="button">Delete</button>
+								<button className="deleteBtn btn btn-xs btn-danger" type="button">Delete</button>
 								</form>
 								</div>
 					}

@@ -31,7 +31,7 @@ var Results = React.createClass({
 								   	<h4><a href={results.web_url} target="_blank">{results.headline.main}</a></h4>
 								   	<input type="hidden" name="title" value={results.headline.main}></input>
 								   	<input type="hidden" name="url" value={results.web_url} size="100"></input>
-								   	<button className="saveBtn btn btn-danger" type="button" onClick={self.handleClick.bind(self, results)}>Save</button>
+								   	<button className="saveBtn btn btn-success" type="button" onClick={self.handleClick.bind(self, results)}>Save</button>
 								   </form>
 								   </div>
 

@@ -21629,7 +21629,7 @@
 							React.createElement("br", null),
 							React.createElement(
 								"button",
-								{ type: "button", className: "searchBtn btn btn-success", onClick: this.handleClick },
+								{ type: "button", className: "searchBtn btn btn-custom", onClick: this.handleClick },
 								"SUBMIT"
 							)
 						)
@@ -21702,7 +21702,7 @@
 								React.createElement("input", { type: "hidden", name: "url", value: results.web_url, size: "100" }),
 								React.createElement(
 									"button",
-									{ className: "saveBtn btn btn-danger", type: "button", onClick: self.handleClick.bind(self, results) },
+									{ className: "saveBtn btn btn-success", type: "button", onClick: self.handleClick.bind(self, results) },
 									"Save"
 								)
 							)
@@ -21800,7 +21800,7 @@
 								React.createElement('input', { className: 'idInput', type: 'hidden', name: '_id', value: result._id }),
 								React.createElement(
 									'button',
-									{ className: 'deleteBtn btn btn-xs btn-warning', type: 'button' },
+									{ className: 'deleteBtn btn btn-xs btn-danger', type: 'button' },
 									'Delete'
 								)
 							)
